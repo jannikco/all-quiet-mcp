@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "2547909e31a47a50340cd2ab9fd7f3d44964f05b6746ebf5c4038f97609da000",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://allquiet.app/api/swagger/public-v1/swagger.json"
+  ],
+  "id": "all-quiet-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "All Quiet MCP setup and connection checker",
+  "description": "Generate All Quiet MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "all-quiet",
+  "appName": "All Quiet",
+  "providerDocs": "https://allquiet.app/api/swagger/public-v1/swagger.json",
+  "providerWebsite": "https://allquiet.app/",
+  "authentication": {
+    "type": "bearer",
+    "requiredCredentialFields": [
+      "token"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://docs.allquiet.app/advanced/api",
+    "tenantRequired": true,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-all-quiet-mcp"
+}
