@@ -1,37 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "2547909e31a47a50340cd2ab9fd7f3d44964f05b6746ebf5c4038f97609da000",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://allquiet.app/api/swagger/public-v1/swagger.json"
-  ],
   "id": "all-quiet-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "All Quiet MCP setup and connection checker",
-  "description": "Generate All Quiet MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare All Quiet for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-all-quiet-mcp",
+  "sourceRevision": "3a0f7551afaa1ece57d43769d2049a26b048fe42732a70b3fe4f6c685eabce57",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://allquiet.app/api/swagger/public-v1/swagger.json"
+  ],
+  "utility": {
+    "problem": "Prepare All Quiet and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "all-quiet",
   "appName": "All Quiet",
-  "providerDocs": "https://allquiet.app/api/swagger/public-v1/swagger.json",
-  "providerWebsite": "https://allquiet.app/",
-  "authentication": {
-    "type": "bearer",
-    "requiredCredentialFields": [
-      "token"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://docs.allquiet.app/advanced/api",
-    "tenantRequired": true,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-all-quiet-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }

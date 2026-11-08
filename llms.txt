@@ -1,0 +1,8 @@
+# All Quiet MCP setup and connection checker
+
+- [Quick start](README.md)
+- [Capabilities](capabilities.json)
+- [Agent instructions](AGENTS.md)
+- [Task skill](.agents/skills/pipmcp-all-quiet/SKILL.md)
+
+Actual operations require a scoped PipMCP API key and hosted configuration.

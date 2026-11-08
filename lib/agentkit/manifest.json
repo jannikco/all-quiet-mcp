@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-all-quiet",
+      "description": "Connect AI agents to All Quiet using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-all-quiet/SKILL.md": "264c02b0aac9f54c0a5add12c70bd82793136d673d3d8c9c18dc0f88553dfca3"
+  }
+}
